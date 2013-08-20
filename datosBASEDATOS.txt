@@ -1,0 +1,21 @@
+/************************/
+Datos Ftp
+host: serrate.bo
+user: alltechnology@serrate.bo
+pass: AllTech2013***
+
+/************************/
+BASE DE DATOS
+Name db:
+serrate_newdb
+user
+serrate_userroot
+pass
+AllTech***
+/************************/
+
+datos admin wordpress
+user:
+srr_tech
+pass:
+#P@55W0rd*
