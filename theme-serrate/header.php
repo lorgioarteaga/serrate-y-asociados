@@ -28,6 +28,15 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<!--  SUPORT IE 9 GRADIENT-->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradientIE {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
 <?php wp_head(); ?>
 </head>
 
@@ -35,20 +44,26 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			 <a  class="logo-main" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
+			 
+             <div id="wikihead">
+             <?php get_search_form( true );?>
+             	<div id="linksocial">
+                    <a class="urllink" href="http://www.facebook.com/" rel="nofollow"><img src="http://www.serrate.bo/uploads/Main/logo_facebook.png" alt="Búsquenos en Facebook" title="Búsquenos en Facebook"></a> 
+                    <a class="urllink" href="http://www.twitter.com/" rel="nofollow"><img src="http://www.serrate.bo/uploads/Main/logo_twitter.png" alt="Síganos en Twitter" title="Síganos en Twitter"></a> 
+                    <a class="urllink" href="http://www.linkedin.com/" rel="nofollow"><img src="http://www.serrate.bo/uploads/Main/logo_in.png" alt="Contáctenos con Linkkedin" title="Contáctenos con Linkkedin"></a> 
+                    <a class="urllink" href="http://www.maps.google.com/" rel="nofollow"><img src="http://www.serrate.bo/uploads/Main/logo_mapa.png" alt="Conozca nuestra ubicación" title="Conozca nuestra ubicación"></a> 
+             
+             		 <a class="selflink" href="http://www.serrate.bo/pmwiki.php/Main/ServiciosLegales"><img src="http://www.serrate.bo/uploads/Main/icono_espanol.png" alt="Ver página en Español" title="Ver página en Español"></a>   <a class="wikilink" href="http://www.serrate.bo/pmwiki.php/PT/ServiciosLegales"><img src="http://www.serrate.bo/uploads/Main/icono_portugues.png" alt="Ver página en Portugués" title="Ver página en Portugués"></a>   <a class="wikilink" href="http://www.serrate.bo/pmwiki.php/EN/ServiciosLegales"><img src="http://www.serrate.bo/uploads/Main/icono_ingles.png" alt="Ver página en Inglés" title="Ver página en Inglés"></a> 
+             	</div>
+             </div>
 		</hgroup>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
+		<nav id="site-navigation" class="main-navigation" role="navigation"> 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-		<?php endif; ?>
+		 
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">
