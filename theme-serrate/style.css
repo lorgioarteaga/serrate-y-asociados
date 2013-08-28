@@ -478,8 +478,7 @@ img.wp-smiley,
 -------------------------------------------------------------- */
 
 /* Body, links, basics */
-html {
-	font-size: 87.5%;
+html { 
 }
 .gradientIE, body{
 	font-size: 14px;
@@ -1498,7 +1497,7 @@ img#wpstats {
 	border-bottom: 0 none;
     color: #FEFEEF;
     font-weight: bold;
-    line-height: 3.69231;
+    line-height:1.5em;
     padding: 16px 17px 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1527,13 +1526,13 @@ img#wpstats {
 		display: block;
 	}
 	 .main-navigation li ul > li:first-child{margin-left:0}
-	 .main-navigation li ul > li{width:230px;}
+	 .main-navigation li ul > li{width:230px;padding:0;}
 .gradientIE,.main-navigation li ul li a { 
 		border-top: 1px solid #EDEDED;
     display: block;font-size:12px;
     font-size: 0.785714rem;
     line-height: 2.18182;
-    padding: 0.571429rem 0.714286rem;
+    padding:4px 0 4px 10px !important;
     white-space: normal;
     width: 100%;
 		
@@ -1766,7 +1765,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#466ebf', end
 }
 .gradientIE, .main-navigation li { 
 	font-size: 13px;float:left; 
-	line-height: 1.42857143;
+	line-height: 1.5em; padding:14px 0 12px;
 	
 	background: #466ebf; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */

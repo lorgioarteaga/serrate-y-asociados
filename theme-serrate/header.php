@@ -34,6 +34,16 @@
     .gradientIE {
        filter: none;
     }
+</style>   
+<![endif]-->
+<!--[if IE 9]>
+<style type="text/css">
+    .main-navigation li a{
+    	 padding: 16px 16px 15px !important;
+    }
+    .main-navigation li:first-child {
+    margin-left: 1px;
+	}
   </style>
 <![endif]-->
 
