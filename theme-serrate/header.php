@@ -36,7 +36,7 @@
     }
 </style>   
 <![endif]-->
-<!--[if IE 9]>
+<!--[if gte IE 9 ]>
 <style type="text/css">
     .main-navigation li a{
     	 padding: 16px 16px 15px !important;
@@ -46,8 +46,24 @@
 	}
   </style>
 <![endif]-->
+<style type="text/css">
+    .ie10 .main-navigation li a{
+    	 padding: 16px 16px 15px !important;
+    }
+    .ie10 .main-navigation li:first-child {
+    margin-left: 1px;
+	}
+  </style>
 
 <?php wp_head(); ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	if(jQuery.browser.msie && jQuery.browser.version == 10){ 
+		jQuery('html').addClass('ie10');
+	} 
+});
+</script>
 </head>
 
 <body <?php body_class(); ?>>
